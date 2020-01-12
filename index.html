@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Catch Event Log</title>
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link type="text/css" href="/css/styles.css" rel="stylesheet" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body class="grey lighten-4">
+    <!-- top nav -->
+    <nav class="teal">
+      <div class="nav-wrapper container">
+        <a class="black-text" href="/">Catch Event Log</a>
+        <span class="right black-text">
+          <i class="material-icons sidenav-trigger" data-target="side-menu">
+            menu
+          </i>
+        </span>
+      </div>
+    </nav>
+
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu">
+      <li><a class="subheader">Catch Event Log</a></li>
+      <li><a href="/" class="waves-effect">Catch Summary</a></li>
+      <li>
+        <a href="/pages/timeline.html" class="waves-effect">Trip Timeline</a>
+      </li>
+    </ul>
+
+    <!-- catches -->
+    <div class="catches container grey-text text-darken-1">
+      <div class="card-panel catch white row">
+        <div class="catch-details">
+          <div class="catch-species">Bigeye Tuna (211)</div>
+        </div>
+        <div class="right catch-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel catch white row">
+        <div class="catch-details">
+          <div class="catch-species">Blue Shark (418)</div>
+        </div>
+        <div class=" right catch-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel catch white row">
+        <div class="catch-details">
+          <div class="catch-species">Lancetfish (121)</div>
+        </div>
+        <div class="right catch-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+      <div class="card-panel catch white row">
+        <div class="catch-details">
+          <div class="catch-species">Lancetfish (121)</div>
+        </div>
+        <div class="right catch-delete">
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <a
+        class="btn-floating btn-large waves-effect waves-light sidenav-trigger"
+        data-target="side-form"
+      >
+        <i class="material-icons black-text">add</i>
+      </a>
+    </div>
+
+    <!-- add catch side nav -->
+    <div id="side-form" class="sidenav side-form">
+      <form class="container center">
+        <div class=""><p>ADD CATCH</p></div>
+        <div class="divider"></div>
+
+        <!-- species -->
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Select</option>
+            <option value="1">Bigey Tuna (211)</option>
+          </select>
+          <label>Species</label>
+        </div>
+
+        <!-- hook -->
+        <div class="input-field">
+          <input placeholder="Number" id="hook" type="text" class="validate" />
+          <label>Hook</label>
+        </div>
+
+        <!-- submit button -->
+        <div>
+          <button
+            class="btn waves-effect waves-light black-text"
+            type="submit"
+            name="action"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- scripts -->
+    <script src="/js/ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("select").formSelect();
+      });
+    </script>
+  </body>
+</html>
