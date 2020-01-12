@@ -81,27 +81,71 @@
 
     <!-- add catch side nav -->
     <div id="side-form" class="sidenav side-form">
-      <form class="container center">
-        <div class=""><p>ADD CATCH</p></div>
+      <form class="container">
+        <div class="center"><p>ADD CATCH</p></div>
         <div class="divider"></div>
-
         <!-- species -->
         <div class="input-field">
           <select>
-            <option value="" disabled selected>Select</option>
+            <option value="Species" disabled selected></option>
             <option value="1">Bigey Tuna (211)</option>
           </select>
           <label>Species</label>
         </div>
-
         <!-- hook -->
         <div class="input-field">
           <input placeholder="Number" id="hook" type="text" class="validate" />
           <label>Hook</label>
         </div>
-
+        <!-- float -->
+        <div class="input-field">
+          <input placeholder="Number" id="float" type="text" class="validate" />
+          <label>Float</label>
+        </div>
+        <!-- caught disposition -->
+        <div class="input-field">
+          <p><label>Caught?</label></p>
+          <p>
+            <label>
+              <input name="alive" type="radio" />
+              <span>Alive</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="dead" type="radio" />
+              <span>Dead</span>
+            </label>
+          </p>
+        </div>
+        <!-- kept/return disposition -->
+        <div class="input-field">
+          <p><label>Kept/Return?</label></p>
+          <p>
+            <label>
+              <input name="kept" type="radio" />
+              <span>Kept</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="alive" type="radio" />
+              <span>Alive</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="dead" type="radio" />
+              <span>Dead</span>
+            </label>
+          </p>
+        </div>
+        <!-- damage -->
+        <!-- <div class="input-field"></div> -->
+        <!-- sex -->
+        <!-- <div class="input-field"></div> -->
         <!-- submit button -->
-        <div>
+        <div class="center">
           <button
             class="btn waves-effect waves-light black-text"
             type="submit"
@@ -114,6 +158,7 @@
     </div>
 
     <!-- scripts -->
+    <script src="/js/app.js"></script>
     <script src="/js/ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/materialize.min.js"></script>

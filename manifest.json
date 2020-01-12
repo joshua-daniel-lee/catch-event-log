@@ -1,0 +1,21 @@
+{
+  "name": "Catch Event Log",
+  "short_name": "CEL",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "teal",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
